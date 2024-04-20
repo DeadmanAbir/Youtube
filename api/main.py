@@ -7,7 +7,8 @@ app = FastAPI()
 
 origins = [
 
-    "https://www.kirak.ai/"
+    "https://www.kirak.ai/",
+    "http://localhost:3000"
 ]
 app.add_middleware(
     CORSMiddleware,
