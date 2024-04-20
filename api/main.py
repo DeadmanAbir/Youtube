@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import logging
-from app.transcript import fetch_transcript
+from transcript import fetch_transcript
 app = FastAPI()
 
 origins = [
