@@ -6,9 +6,11 @@ from transcript import fetch_transcript
 app = FastAPI()
 
 origins = [
-
-    "https://www.kirak.ai/",
-    "http://localhost:3000"
+    "http://localhost.tiangolo.com",
+    "https://localhost.tiangolo.com",
+    "http://localhost:3000",
+    "http://localhost:8080",
+    "http://kirak.ai"
 ]
 app.add_middleware(
     CORSMiddleware,
